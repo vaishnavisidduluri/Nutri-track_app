@@ -101,7 +101,7 @@ food_input = st.text_input("🔍 Enter food items", placeholder="e.g., apple, br
 # ----- Search Button -----
 if st.button("✨ Analyze"):
     if food_input.strip():
-        api_key = st.secrets["api_key"] if "api_key" in st.secrets else "PASTE_YOUR_KEY_HERE"
+        api_key = st.secrets["api_key"] if "api_key" in st.secrets else "HYgXx4w7LOvXAV6rQXCu7BP6FMCo5rAK2fELjfco"
         food_items = [item.strip() for item in food_input.split(",") if item.strip()]
         all_results = []
         totals = {label: 0 for label in NUTRIENT_KEYS.values()}
